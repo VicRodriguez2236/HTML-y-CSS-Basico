@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<meta name="Description" content="PseudoClases">
+    
+ <style>
+     h1{color: red;}
+     #subtitulo{color: green;} 
+     .parrafo{color: blue;}
+
+     span p:first-child{ color: red;}
+     span p:last-child{ color: blue;}
+     span p:nth-child(4){color: green;}
+     .pink:hover {color: pink;}
+
+     #box{
+        width: 800px;
+        background-color: cyan;
+     }
+     .inline, .block{
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        background-color: purple;
+        border: 3px solid green;
+     }
+     .block{
+        background-color: red;
+     }
+</style>
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>Ejemplo de título</h1>
+        <h2 id="subtitulo">El subtítulo</h2>
+        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis quisquam facere odio necessitatibus dicta maxime illo aliquam dolores possimus omnis esse officia laudantium quas obcaecati, accusantium eligendi cupiditate sequi eum.</p>
+        <span>
+            <p>Texto</p>
+            <p>Texto</p>
+            <p>Texto</p>
+            <p>Texto</p>
+            <p class="pink">Texto</p>
+            <p>Texto</p>
+            <p>Texto</p>
+            <p>Texto</p>
+        </span>
+    </div>
+
+    <div id="box">
+        <span class="inline">Texto dentro de span</span>
+        <span class="inline">Texto dentro de span</span>
+        <span class="inline">Texto dentro de span</span>
+        <span class="inline">Texto dentro de span</span>
+
+        <div class="block">Mi texto dentro de etiqueta div</div>
+        <div class="block">Mi texto dentro de etiqueta div</div>
+        <div class="block">Mi texto dentro de etiqueta div</div>
+        <div class="block">Mi texto dentro de etiqueta div</div>
+
+    </div>
+    
+</body>
+</html>
