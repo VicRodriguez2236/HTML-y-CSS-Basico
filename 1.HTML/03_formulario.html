@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Victor Rodriguez</title>
+<meta name="Description" content="Formulario">
+    
+ <style>
+    .container{
+     width: 800px;
+     margin: auto;
+    }
+    div, header, nav, main, footer, section, article, sidebar{
+        border: 1px solid gray;
+        margin: 2px;
+        padding: 2px
+    }
+     main{background: pink;   }
+     section{ background: #F9F5C9;}
+     article{ background: #E2E2E2;}
+     
+</style>
+
+</head>
+
+<body>
+    
+    <div class="container">
+      <header>Encabezado</header>
+      <nav>
+        <ul>
+            <li>Opcion</li>
+            <li>Opcion</li>
+        </ul>
+      </nav>
+      <main>Zona de información
+        <section>
+            <article>Articulo
+                <dl>
+                    <dt>Término</dt>
+                    <dd>Descripción</dd>
+                    <dt>Término</dt>
+                    <dd>Descripción</dd>
+                    <dt>Término</dt>
+                    <dd>Descripción</dd>
+                </dl>
+            </article>
+        </section>
+        <section>
+            <article>Articulo
+                <form action="">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre">
+                    <br>
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email">
+                    <br>
+                    <label for="genero">Genero</label>
+                    <input type="radio" name="genero"> Hombre
+                    <input type="radio" name="genero" id=""> Mujer
+                    <br>
+                    <label for="pais">Pais</label>
+                    <select>
+                        <option>Seleccione una opcion</option>
+                        <option>México</option>
+                        <option>Estados Unidos</option>
+                        <option>Canada</option>
+                        <option>Otro</option>
+                    </select>
+                    <br>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+        </section>
+      </main>
+      <footer>Pie de pagina</footer>
+    </div>
+    
+</body>
+</html>
