@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FLEXBOX</title>
+<style>
+.contenedor {
+	/* 1. Prueba antes de modificar.*/
+  	/* 2. Indica display: flex; a continuación*/
+    display: flex;
+
+	/* 3. Declara flex-direction: row; (row es el valor por default). Prueba */
+  flex-direction: row; /*Lo dejaré en fila*/
+  /*flex-direction: row; Posiciona los elementos de un contenedor en fila de primero a ultimo*/
+  /*flex-direction: row-reverse; Invierte el orden de los elementos en la fila del ultimo al primero*/
+  /*flex-direction: column; Posiciona los elementos de un contenedor en una columna de primero a ultimo*/
+  /*flex-direction: column-reverse; Invierte el orden de los elementos en la fila del ultimo al primero*/
+  
+	
+	/* 4. Cambia los valores para flex-direction y prueba con row-reverse, column y column-reverse */
+  background-color: #0C3F7A;
+}
+
+.contenedor > div {
+  background-color: #FFF;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<h1>Flexible Box Direction</h1>
+
+<div class="contenedor">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>  
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>  
+  <div>G</div>
+  <div>H</div>
+</div>
+</body>
+</html>
